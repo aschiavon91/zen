@@ -2,7 +2,8 @@
 resolver = "2"
 members = [
     "core/*",
-    "bindings/*"
+    "bindings/[!elixir]*",
+    "bindings/elixir/native/zen_elixir"
 ]
 
 [workspace.dependencies]
@@ -17,7 +18,6 @@ futures = "0.3.30"
 humantime = "2.1.0"
 once_cell = "1.19.0"
 petgraph = "0.6.4"
-phf = "0.11.2"
 regex = "1.10.2"
 regex-lite = "0.1.5"
 serde = "1.0.195"

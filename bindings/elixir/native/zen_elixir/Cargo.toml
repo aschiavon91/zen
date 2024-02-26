@@ -1,0 +1,20 @@
+[package]
+name = "zen_elixir"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "zen_elixir"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.31.0"
+serde = { workspace = true }
+serde_json = { workspace = true }
+futures = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+zen-engine = { path = "../../../../core/engine" }
+zen-expression = { path = "../../../../core/expression" }
